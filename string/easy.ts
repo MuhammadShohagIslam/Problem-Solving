@@ -13,7 +13,7 @@ function lengthOfLongestSubstring(s:string): number {
        const currentChar = s[right];
        const previousSeenChar = seen.get(currentChar);
        if(previousSeenChar >= left){
-           left = previousSeenChar + 1;
+           left =+ 1;
        }
        seen.set(currentChar, right);
        longest = Math.max(longest, right - left + 1)
@@ -22,3 +22,19 @@ function lengthOfLongestSubstring(s:string): number {
     return longest;
 };
 console.log(lengthOfLongestSubstring("abcabcbbb"));
+
+function longestNiceSubstring(s) {
+    let sLowercase = s.toLowerCase()
+    let sObject = {};
+    let longestNiceSubstringArray = [];
+    for(let right = 0; right < sLowercase.length; right++){
+        const currectChar = sLowercase[right];
+        if(!sObject[currectChar]){
+            sObject[sLowercase[right]] = [right]
+        }else{
+          sObject[sLowercase[right]].push(right)
+        }
+    }
+    console.log(sObject)
+};
+console.log(longestNiceSubstring("YazaAay"))
