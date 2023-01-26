@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "question": "Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring case sensitivity",
+        "info": "For string question, palindromes is the crucial pattern.It's also common sub-problems. It's also a string that reads the same forwards and backwards. Another meaning is a palindrome, if after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. example, 'abc', 'a', '' Before start to solve the problem, let's talk about what is the sub-problem.When we have to solve along the way to solving the main problem,it called sub problems",
+        "pseudocode":[
+            "make a function which take string parameter",
+            "then removing all kind of non-alphanumeric letter which string replace method and make lower case string",
+            "initialize left and right pointer at start and end of string",
+            "loop through string characters while comparing them, then move the pointers closer to the center."
+        ],
+        "image": ""
+    },
+    {
+        "id":2,
+        "question": "Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring case sensitivity",
+        "info": "For string question, palindromes is the crucial pattern.It's also common sub-problems. It's also a string that reads the same forwards and backwards. Another meaning is a palindrome, if after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Before start to solve the problem, let's talk about what is the sub-problem.When we have to solve along the way to solving the main problem,it called sub problems",
+        "pseudocode":[
+            "make a function which take string parameter",
+            "then removing all non-alphanumeric characters with string replace method and to make lowercase with toLowerCase method",
+            "initialize left and right pointer at start and end of string.",
+            "loop through string of the characters while comparing them",
+            "checking left string letter and right string letter is same or not if not make function name valid sub palindrome which check rest of the string character is valid or not one is skip character and another one remove the last character "
+        ],
+        "image": ""
+    }
+]

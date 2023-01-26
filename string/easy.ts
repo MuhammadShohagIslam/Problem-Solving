@@ -23,9 +23,9 @@ function lengthOfLongestSubstring(s:string): number {
 };
 console.log(lengthOfLongestSubstring("abcabcbbb"));
 
-function longestNiceSubstring(s) {
+function longestNiceSubstring(s:string) {
     let sLowercase = s.toLowerCase()
-    let sObject = {};
+    let sObject:any = {};
     let longestNiceSubstringArray = [];
     for(let right = 0; right < sLowercase.length; right++){
         const currectChar = sLowercase[right];
