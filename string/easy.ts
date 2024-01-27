@@ -23,6 +23,7 @@ function lengthOfLongestSubstring(s:string): number {
 };
 console.log(lengthOfLongestSubstring("abcabcbbb"));
 
+// longest nice substring
 function longestNiceSubstring(s:string) {
     let sLowercase = s.toLowerCase()
     let sObject:any = {};
